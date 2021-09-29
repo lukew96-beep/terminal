@@ -1,0 +1,35 @@
+mkdir first
+cd first
+touch person.txt
+mv person.txt another.txt
+cp another.txt copy.txt
+rm copy.txt
+cp -r first second
+rm -r second
+
+Man shows the manual for a particular command. To scroll out of man rm, you would 
+press q.
+The -1 flag would force output to be one entry per line.  This is the 
+default when output is not to a terminal.
+The -a flag would include files that start with a . also known as hidden files.
+Option/Alt + left/right will jump between words.
+Command e will jump to the end of a line
+Command a will jump to beggining of a line
+Command w will delte a word
+Terminal is a wrapper program that runs a shell. A shell is the program which
+actually proccesses commands and returns outputs.
+An absolute path is the path to a folder or file including all directories it 
+takes to get there.
+Relative path is the path to a folder or file within the directory it is in.
+A flag is a special attribute of a command prompt. examples include ls -a which
+will return a list including all files even if they are hidden. rm -r removes a 
+directory instead of just a file. ls -1 returns a list with all files on one
+line instead of a columb.
+-f on the rm command will Attempt to remove the files without prompting for confirmation
+, regardless of the file's permissions.  If the file does not exist, do not display a diagnostic message or modify the
+exit status to reflect an error.  The -f option overrides any previous -i options.
+-r will Attempt to remove the file hierarchy rooted in each file argument. The -R 
+option implies the -d option.  If the -i option is specified, the user is prompted for confirmation
+before each directory's contents are processed (as well as before the attempt is 
+made to remove the directory). If the user does not respond affirmatively, 
+the file hierarchy rooted in that directory is skipped.
